@@ -1,0 +1,123 @@
+*{
+    margin: 0;padding: 0;
+    
+}
+.hide{
+    display: none;
+}
+.car,.enemy {
+    width: 50px;
+    height: 80px; 
+   
+    color: rgba(132, 31, 233,0.45);
+    z-index: inherit;
+    position: absolute;
+    background-image: url(race.png);
+    
+    background-size: 100% 100%;
+ /*    left: 10px; */
+   top: 530px;
+}
+.enemy{
+    background-image: url(blue.png);
+}
+.gameArea {
+    width: 400px;
+    height: 100vh;
+    background-color: rgb(49, 48, 48);
+margin: auto;
+position: relative;
+
+}
+.lines{
+    width: 10px;
+    height: 90px;
+    background-color: azure;
+    position: absolute;
+    margin-left: 195px;
+overflow: hidden;
+}
+.score{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 300px;
+    line-height: 70px;
+    background-color: black;
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+    box-shadow: 0 5px 5px #777;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.startScreen{
+    position: absolute;
+    background-color: rgb(236, 143, 66);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: azure;
+    z-index: 1;
+    text-align: center;
+    border: 1px solid black;
+    padding: 15px;
+    margin: auto;
+    width: 50%;
+    cursor: pointer;
+    letter-spacing: 4;
+    font-size: 20px;
+    word-spacing: 3;
+    line-height: 30px;
+    text-transform: uppercase;
+    box-shadow: 0 10px 10px #777;
+}
+.carGame{
+     width: 100vw;
+     height: 100vh;
+     overflow: hidden;
+}
+.Superman{
+    width: 512px;
+  left: 400px;
+    height: 100vh;
+    position: absolute;
+    background-image: url(bg1.jpg);
+    background-size: 100% 100%;
+   
+    top: 0px;
+
+}
+.fly{
+    height: 140px;
+    width: 70px;
+    background-image: url(superman.jpg);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 600px;
+}
+.flyanimation{
+    animation: hero 1s linear 1;
+
+}
+.Fuel{
+    position: absolute;
+    top: 100px;
+    height:100px;
+    width: 100px;
+    background-image: url(fuel.jpg);
+    background-size: cover;
+    left: 10px;
+
+}
+@keyframes hero {
+    0%{
+      bottom: 0%;
+
+    }
+    50%{
+        bottom: 50%;
+    }
+    100%{
+        bottom: 100%;
+    }
+}
